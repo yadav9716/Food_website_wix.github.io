@@ -434,10 +434,8 @@
     }
     .burger{
         display: block;
-        width: 100%;
-        display: flex;
-        justify-content: right;
-        /* border: 2px solid red; */
+        text-align: right;
+        margin-left: auto;        
     }
     .burger-box{
         /* border: 2px solid green; */
@@ -457,6 +455,7 @@
         width: 100%;
         display: none;
         font-family: 'Quicksand', sans-serif;
+        color: black;
     }
     .links-column ul li{
         padding: 6px 8px;

@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home{
+    text-align: center;
+}
+
+.img-home{
+    background: rgba(0, 0, 0, 0.6) url("../img/bg.jpg");
+    background-blend-mode: darken;
+    background-size: cover;
+    width: 100%;
+    height: 130vh;
+}
+
+.flex-row{
+    display: flex;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar{
+    padding: 12px 0px;
+    display: flex;
+    background: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.left-nav{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 6px;
+    padding: 10px;
+}
+
+.right-nav{
+    display: float;
+    float: right;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.burger{
+    display: none;
+}
+
+.right-nav ul li a{
+    text-decoration: none;
+}
+
+.right-nav ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 0px 12px;
+    color: black;
+}
+
+.big-text{
+    font-family: 'Cinzel', serif;
+    color: white;
+    font-size: 80px;
+}
+
+.small-text{
+    font-family: 'Julius Sans One', sans-serif;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 8px;
+    padding-bottom: 34px;
+}
+
+.btn{
+    border: 1px solid white;    
+    background: none;
+    padding: 8px 34px;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    transition: 0.8s;
+}
+
+.btn:hover{
+    border: 1px solid #323840;
+    background: #323840;
+    transition: 0.4s;
+}
+
+.footer{
+    position: absolute;
+    height: 20vh;
+    width: 100%;
+    text-align: center;
+}
+
+.icons i{
+    padding: 0px 16px;
+}
+
+.footer-bottom{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.footer-text{
+    width: 100%;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    padding: 20px 0px;
+}
+
+/* PORTFOLIO PAGE */
+.portfolio-heading{
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 42px;
+    font-weight: 400;
+    padding: 36px 0px;
+}
+
+.box-text{
+    font-size: 42px;
+    font-weight: 400;
+    color: white;
+    padding: 16px 0px;
+}
+
+.portfolio-box1, .portfolio-box2, .portfolio-box3{
+    font-family: 'Cinzel',  serif;
+    width: 32%;
+    margin: 0px 8px;
+    padding-top: 80px;
+    text-align: center;
+    height: 120vh;
+    background-blend-mode: darken;
+    /* opacity: 0.9; */
+}
+
+.portfolio-box1{
+    background: rgba(0, 0, 0, 0.4) url("../img/portfolio_img1.jfif");
+    background-size: cover;
+}
+
+.portfolio-box2{
+    background: rgba(0, 0, 0, 0.4) url("../img/portfolio_img2.jpg");
+    background-size: cover;
+}
+
+.portfolio-box3{
+    background: rgba(0, 0, 0, 0.4) url("../img/portfolio_img3.jpg");
+    background-size: cover;
+}
+
+/* About */
+.about-box1{
+    width: 50vw;
+    height: 120vh;
+    background: url("../img/about.jpg");
+    background-size: cover;
+    /* width: 20px; */
+    /* width: 20px; */
+}
+
+.about-box2{
+    width: 50%;
+    height: 120vh;
+    background-color: #f5f6fa;
+}
+
+.about-text-box{
+    padding: 160px 120px;
+}
+
+.about-heading{
+    font-family: 'Cinzel', serif;
+    font-size: 42px;
+    font-weight: 400;
+}
+
+.about-padding{
+    padding-bottom: 36px;
+}
+
+.para-text{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.para-heading{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+}
+
+/* Books */
+.books-box{
+    width: 100%;
+    margin: auto;
+    padding: 10px 200px;
+    background-color: #f5f6fa;
+    margin-bottom: 20px;
+}
+
+.books-heading{
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 42px;
+    font-weight: 400;
+    padding: 36px 0px;
+}
+
+.books-box-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 70px;
+}
+
+.books-box-heading{
+    font-family: 'Cinzel', serif;
+    color: black;
+    font-size: 70px;
+}
+
+.books-box-para{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.books-right{
+    display: float;
+    margin-left: auto;
+    align-items: center;
+    float: right;
+}
+
+.books-price{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.btn-books{
+    border: 1px solid black;
+    color: black;
+}
+
+.btn-books:hover{
+    border: 1px solid black;
+    color: white;
+}
+
+.books-img-box1{
+    background: url("../img/book1.webp");
+    background-size: cover;
+    width: 60%;
+    height: 60vh;
+}
+
+.books-img-box2{
+    background: url("../img/book2.webp");
+    background-size: cover;
+    width: 60%;
+    height: 60vh;
+}
+
+.books-img-box3{
+    background: url("../img/book3.webp");
+    background-size: cover;
+    width: 60%;
+    height: 60vh;
+}
+
+/* Clients Albums */
+.clients{
+    height: 60vh;
+}
+
+.client-box1, .client-box2, .client-box3{
+    font-family: 'Cinzel',  serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background-blend-mode: darken;
+    transition: 0.4s;
+}
+
+.clients-padding-box{
+    width: 32%;
+    margin: 0px 8px;
+    transition: 0.4s;
+}
+
+.clients-padding-box:hover{
+    width: 32%;
+    /* margin: 0px 8px; */
+    padding: 4px 4px;
+    transition: 0.4s;
+}
+
+/* .client-box1:hover, .client-box2:hover, .client-box3:hover{
+    width: 31%;
+    height: 58vh;
+    transition: 0.4s;
+} */
+
+.client-box1{
+    background: rgba(0, 0, 0, 0.4) url("../img/clients-green.jpg");
+    background-size: cover;
+}
+
+.client-box2{
+    background: rgba(0, 0, 0, 0.4) url("../img/clients-bread.jfif");
+    background-size: cover;
+}
+
+.client-box3{
+    background: rgba(0, 0, 0, 0.4) url("../img/clients-apple.jpg");
+    background-size: cover;
+}
+
+.client-name{
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Contact */
+.contact-box1{
+    width: 50%;
+    height: 180vh;
+    background: url("../img/contact.jfif");
+    background-size: cover;
+}
+
+.contact-box2{
+    width: 50%;
+    height: 180vh;
+    background-color: #f5f6fa;
+}
+
+.contact-text-box{
+    padding: 160px 0px;
+    width: 70%;
+    padding-left: 140px;
+    /* padding-right: 240px; */
+}
+
+.contact-heading{
+    font-family: 'Cinzel', serif;
+    font-size: 42px;
+    font-weight: 400;
+}
+
+.contact-padding{
+    padding-bottom: 36px;
+}
+
+.input-padding{
+    padding: 4px 4px;
+}
+
+.input-padding input, textarea{
+    padding: 6px 4px;
+    width: 100%;
+}
+
+.input-padding input:hover, textarea:hover{
+    border: 3px solid grey;
+    /* padding: 2px; */
+}
+
+.btn-submit{
+    color: white;
+    background-color: black;
+    margin: 0px 4px;
+}
+
+.btn-subs{
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.contact-btn-box{
+    width: 100%;
+    text-align: right;
+}
+
+.input-subs{
+    width: 40%;
+}
+
+.subs-box{
+    width: 60%;
+}
+
+.btn-subs{
+    width: 100%;
+}
+
+.second-navbar{
+    display: none;
+    transition: 0.5s ease-out;
+}
+
+/* Responsive */
+@media only screen and (max-width: 600px) {
+    .navbar{
+        /* transition: 0.6s; */
+    }
+    .burger{
+        display: block;
+        width: 100%;
+        display: flex;
+        justify-content: right;
+        /* border: 2px solid red; */
+    }
+    .burger-box{
+        /* border: 2px solid green; */
+        padding: 4px;
+    }
+    .line{
+        list-style-type: none;
+        border: 2px solid black;
+        width: 42px;
+        margin: 8px 4px;
+    }
+    .links-row{
+        display: none;
+    }
+    .links-column{
+        text-align: center;
+        width: 100%;
+        display: none;
+        font-family: 'Quicksand', sans-serif;
+    }
+    .links-column ul li{
+        padding: 6px 8px;
+    }
+    .pages{
+        display: block;
+        height: 100vh;
+        z-index: 1;
+        background-color: white;
+        font-family: 'Quicksand', sans-serif;
+        /* display: none; */
+    }
+
+    /* Home */
+    .big-text{
+        font-size: 50px;
+    }
+    .img-home{
+        height: 90vh;
+    }
+    .btn{
+        padding: 8px 34px;
+        font-size: 24px;
+    }
+    
+    /* Portfolio */
+    .portfolio{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .portfolio-box1, .portfolio-box2, .portfolio-box3{
+        width: 90%;
+        height: 60vh;
+        margin-bottom: 20px;
+    }
+    .box-text{
+        font-size: 38px;
+        font-weight: 400;
+        color: white;
+        padding: 16px 0px;
+    }
+
+    /* About */
+    .about{
+        flex-direction: column;
+    }
+    .about-box1, .about-box2{
+        width: 100%;
+    }
+    .about-text-box{
+        padding: 40px 40px;
+    }
+
+    /* Books */
+    .books-box{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px;
+    }
+    .books-box-text{
+        width: 100%;
+        padding: 10px 10px;
+    }
+    .books-img-box1, .books-img-box2, .books-img-box3{
+        width: 100%;
+        padding: 100px 10px;
+        height: 50vh;
+    }
+    .books-box-heading {
+        font-size: 50px;
+    }    
+
+    /* clients */
+    .clients{
+        flex-direction: column;
+        height: 200vh;
+    }
+    .client-box1, .client-box2, .client-box3{
+        text-align: center;
+        height: 58vh;
+        transition: 0s;
+    }
+    .clients-padding-box{
+        width: 100%;
+        margin: 8px 0px;
+        padding: 10px 10px;
+        transition: 0s;
+    }
+    .clients-padding-box:hover{
+        width: 100%;
+        padding: 10px 10px;
+        transition: 0s;
+    }
+
+    /* Contact */
+    .contact-box1, .contact-box2{
+        width: 100%;
+        height: 100vh;
+    }
+    .contact-box2{
+        height: auto;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .contact-text-box{
+        padding: 80px 0px;
+        width: 90%;
+        margin: auto;
+        /* text-align: center; */
+    }
+    .sub-box{
+        flex-direction: column;
+        width: 100%;
+    }
+    .subs-box{
+        width: 100%;
+    }
+    .btn-submit{
+        margin: 6px 0px;
+        width: 100%;
+    }
+}
